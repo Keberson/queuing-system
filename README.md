@@ -1,7 +1,7 @@
 # Single-channel queuing system 
 Educational and technological practice on modeling a single-channel queuing system for practicing skills in the course of Object-oriented programming and Queuing Theory by a student of the Bauman Moscow State Technical University of the CAD Systems Department
 
-![](D:\Desktop\Тервер\practice_task\docs\qs.png)
+![](docs\qs.png)
 
 ## Links
 + [Theory](docs/theory.md)
