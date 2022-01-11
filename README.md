@@ -5,6 +5,7 @@ Educational and technological practice on modeling a single-channel queuing syst
 
 ## Links
 + [Theory](docs/theory.md)
++ [Build and launch](docs/launch.md)
 
 ## Task
 It is required to develop a program that implements discrete-event modeling of the system: 
@@ -20,6 +21,9 @@ Note that all time intervals obey the laws of distributions, which are continuou
 + "At time 345.678, a transaction with ID 345 released device 1", 
 + "At time 456.789, a transaction with ID 456 exited the model."
 
+## Result
+
+<img src='https://github.com/Keberson/queuing-system/blob/master/docs/model.gif?raw=true' />
 
 ## Assigning project directories:
 + `docs` - documentation files
