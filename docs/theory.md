@@ -6,9 +6,9 @@ differential equations or partial differential equations characteristic of other
 events occur that change the state of the system. And in the process of modeling, it is necessary and sufficient to consider the behavior of the system only at these points in time.
 
 Therefore, the modeling procedure is based on a discrete-event mechanism for promoting model time. It consists of iteratively changing procedures, which are traditionally called phases.
-1) In the `timer correction phase`, a transition is made to the next moment in time when at least one event is supposed to be implemented.
-2) In the `viewing phase`, when the model time is stopped, system state changes are performed and, if necessary, events  related to future changes are predicted.
-3) In the `input phase`, the initialization of the system state is performed and the initial prediction of events is performed.
+1. In the `timer correction phase`, a transition is made to the next moment in time when at least one event is supposed to be implemented.
+2. In the `viewing phase`, when the model time is stopped, system state changes are performed and, if necessary, events  related to future changes are predicted.
+3. In the `input phase`, the initialization of the system state is performed and the initial prediction of events is performed.
 
 From the point of view of the data model, it turns out to be convenient to use an auxiliary data structure describing the current status of the passage of the application (which in terms of simulation modeling
 is usually called a transaction) of the processing route involving system resources. Interacting with resources, the transaction changes their state, and hence the state of the system as a whole. For example, in GPSS, such
