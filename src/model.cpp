@@ -76,9 +76,11 @@ void Model::startSimulation() {
 }
 
 void Model::executePhaseInput() {
-    double timeMoment = _lastModelTime + generateTimeMoment(0, MAX_TIME_TO_COME);
-    _lastModelTime = timeMoment;
-    _fec.push_back(Data(_currentTransactID++, WAIT_TO_BE_ADDED, timeMoment));
+    if (_currentModelTime == _lastModelTime) {
+        double timeMoment = _lastModelTime + generateTimeMoment(0, MAX_TIME_TO_COME);
+        _lastModelTime = timeMoment;
+        _fec.push_back(Data(_currentTransactID++, WAIT_TO_BE_ADDED, timeMoment));
+    }
 }
 
 void Model::executePhaseTimerCorrection() {
